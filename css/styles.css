@@ -1,0 +1,90 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --akcennt-color: #2196f3;
+  --background-color: #fff;
+}
+/*основной текст #757575*/
+/*вторичный текст #212121 */
+/*фон #FFFFFF */
+/* цвет акцента #2196F3 */
+.page {
+  background-color: #fff;
+  color: rgba(117, 117, 117, 1);
+}
+.logo {
+  color: black;
+}
+.logo-color-blue {
+  color: #2196f3;
+}
+.logo:focus,
+.logo:hover {
+  color: var(--akcennt-color);
+}
+
+/* класс для сброса маркеров на списке */
+.list {
+  list-style: none;
+}
+/* ссылки */
+.site-nav .link {
+  color: #212121;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: #2196f3;
+}
+.auth-nav .link {
+  color: #212121;
+}
+.auth-nav .link:hover,
+.auth-nav .link:focus {
+  color: #2196f3;
+}
+/* section */
+.section {
+}
+.section-title {
+  color: #212121;
+}
+
+.hero-section {
+  background-color: #2f303a;
+}
+.white-title {
+  color: #fff;
+}
+
+/* преимущества*/
+.feature-list {
+}
+.feature-title {
+  color: #212121;
+}
+/* наша команда */
+.member-name {
+  color: #212121;
+}
+/* кнопка */
+.button,
+.button:focus {
+  color: var(--background-color);
+  background-color: var(--akcennt-color);
+}
+/* footer */
+.footer {
+  background-color: #2f303a;
+}
+.address-nav,
+.link {
+  color: rgba(255, 255, 255, 0.6);
+}
+.address-link {
+  color: rgba(255, 255, 255, 1);
+}
+
+.address-link:hover,
+.address-link:focus {
+  color: var(--akcennt-color);
+}
