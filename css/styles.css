@@ -15,10 +15,13 @@
   font-family: Roboto, sans-serif;
   font-style: Medium;
   font-weight: 500;
+  font-size: 14px;
+  line-height: 1.7px;
   letter-spacing: 3%;
 }
 .logo {
   font-family: Raleway;
+  font-weight: 700;
   font-style: Bold;
   font-size: 26px;
   line-height: 1.19;
