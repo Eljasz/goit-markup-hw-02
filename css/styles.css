@@ -1,8 +1,9 @@
 :root {
-  --primary-text-color: #757575;
+  --primary-text-color: rgba(117, 117, 117, 1);
   --title-text-color: #212121;
   --akcent-color: #2196f3;
   --background-color: #fff;
+  --background-color-section: #2f303a;
 }
 /*основной текст #757575*/
 /*вторичный текст #212121 */
@@ -10,13 +11,21 @@
 /* цвет акцента #2196F3 */
 .page {
   background-color: #fff;
-  color: rgba(117, 117, 117, 1);
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  font-style: Medium;
+  font-weight: 500;
+  letter-spacing: 3%;
 }
 .logo {
+  font-family: Raleway;
+  font-style: Bold;
+  font-size: 26px;
+  line-height: 1.19;
   color: black;
 }
 .logo-color-blue {
-  color: #2196f3;
+  color: var(--akcent-color);
 }
 .logo:focus,
 .logo:hover {
@@ -29,75 +38,153 @@
 }
 /* ссылки */
 .site-nav .link {
-  color: #212121;
+  font-family: 14px;
+  line-height: 1.14;
+  letter-spacing: 2%;
+  color: var(--title-text-color);
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
-  color: #2196f3;
+  color: var(--akcent-color);
 }
 .auth-nav .link {
-  color: #757575;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 2%;
+  color: var(--primary-text-color);
 }
 .auth-nav .link:hover,
 .auth-nav .link:focus {
-  color: #2196f3;
+  color: var(--akcent-color);
+}
+/* класс для сброса нижнего подчеркивания с ccылок */
+a {
+  text-decoration: none;
 }
 /* section */
 .section {
 }
 .section-title {
-  color: #212121;
+  font-style: Bold;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: Center;
+  color: var(--title-text-color);
 }
-
+/* Герой */
 .hero-section {
-  background-color: #2f303a;
+  background-color: var(--background-color-section);
 }
 .white-title {
-  color: #fff;
+  font-style: Black;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: Center;
+  letter-spacing: 6%;
+
+  color: var(--background-color);
 }
 
 /* преимущества*/
-.feature-list {
-}
 .feature-title {
-  color: #212121;
+  font-style: Bold;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+
+  color: var(--title-text-color);
+}
+.feature-list {
+  font-style: Regular;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7px;
 }
 /* наша команда */
 .member-name {
-  color: #212121;
+  font-size: 16px;
+  line-height: 1.18;
+  color: var(--title-text-color);
+}
+.position {
+  font-style: Regular;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
 }
 /* кнопка */
 button {
+  font-style: Bold;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 6%;
+
+  color: var(--background-color);
   background-color: var(--akcent-color);
 }
 .button:focus {
   background-color: var(--akcent-color);
 }
-.button-portfolio {
-  background-color: white;
-}
-.button-portfolio:hover,
-.button-portfolio:focus {
-  background-color: var(--akcent-color);
-}
-
 /* footer */
 .footer {
-  background-color: #2f303a;
+  background-color: var(--background-color-section);
 }
 
 .address-link {
+  font-style: Regular;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+
   color: rgba(255, 255, 255, 1);
 }
 
 .address-link:hover,
 .address-link:focus {
-  color: #2196f3;
+  color: var(--akcent-color);
 }
 .auth-nav-footer .link {
+  font-style: Bold;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+
   color: rgba(255, 255, 255, 0.6);
 }
 .auth-nav-footer .link:hover,
 .auth-nav-footer .link:focus {
-  color: #2196f3;
+  color: var(--akcent-color);
+}
+/* портфолио */
+.button-portfolio {
+  font-size: 16px;
+  line-height: 1.6;
+
+  color: var(--title-text-color);
+  background-color: white;
+}
+.button-portfolio:hover,
+.button-portfolio:focus {
+  color: var(--background-color);
+  background-color: var(--akcent-color);
+}
+.portfolio-section-title {
+  font-style: Bold;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 6%;
+
+  color: #212121;
+}
+.product-type {
+  font-style: Regular;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.8;
+
+  color: var(--primary-text-color);
 }
