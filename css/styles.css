@@ -1,5 +1,5 @@
 :root {
-  --primary-text-color: rgba(117, 117, 117, 1);
+  --primary-text-color: #757575;
   --title-text-color: #212121;
   --akcent-color: #2196f3;
   --background-color: #fff;
@@ -25,10 +25,10 @@
   font-style: Bold;
   font-size: 26px;
   line-height: 1.19;
-  color: black;
-}
-.logo-color-blue {
   color: var(--akcent-color);
+}
+.logo-color-black {
+  color: black;
 }
 .logo:focus,
 .logo:hover {
@@ -48,6 +48,9 @@
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
+  color: var(--akcent-color);
+}
+.site-nav .current {
   color: var(--akcent-color);
 }
 .auth-nav .link {
@@ -124,6 +127,7 @@ button {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 6%;
+  cursor: pointer;
 
   color: var(--background-color);
   background-color: var(--akcent-color);
@@ -136,20 +140,21 @@ button {
   background-color: var(--background-color-section);
 }
 
-.address-link {
+.link .address-link {
   font-style: Regular;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
+  cursor: pointer;
 
-  color: rgba(255, 255, 255, 1);
+  color: var(--background-color);
 }
 
 .address-link:hover,
 .address-link:focus {
   color: var(--akcent-color);
 }
-.auth-nav-footer .link {
+.auth-footer .link {
   font-style: Bold;
   font-weight: 400;
   font-size: 14px;
@@ -157,14 +162,15 @@ button {
 
   color: rgba(255, 255, 255, 0.6);
 }
-.auth-nav-footer .link:hover,
-.auth-nav-footer .link:focus {
+.auth-footer .link:hover,
+.auth-footer .link:focus {
   color: var(--akcent-color);
 }
 /* портфолио */
 .button-portfolio {
   font-size: 16px;
   line-height: 1.6;
+  cursor: pointer;
 
   color: var(--title-text-color);
   background-color: white;
